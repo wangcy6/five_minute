@@ -45,10 +45,7 @@ day 1
 
 > sort默认的排序方式是升序，如果想改成降序，就加个-r
 
- -k, --key=POS1[,POS2]
-​              start a key at POS1 (origin 1), end it at POS2 (default end of line)
 
-> 按照多列排序
 
 -t, --field-separator=SEP
 ​              use SEP instead of non-blank to blank transition
@@ -60,7 +57,22 @@ day 1
 
 > 你有没有遇到过10比2小的情况,使用-n选项，来告诉sort，“要以数值来排序”
 
-## shell sort 多列排序
+
+
+
+
+ -k, --key=POS1[,POS2]
+​              start a key at POS1 (origin 1), end it at POS2 (default end of line)
+
+> 多列排序
+
+
+
+
+
+------------------------------------------end------------------------------------------------------
+
+## 扩展阅读
 
 **一、准备素材**
 
