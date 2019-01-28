@@ -2,14 +2,18 @@
 
 ## 1 小对话
 
-## ![](D:\doc\国美\doc\today\code\weekly\FQA\pic\20190107.png)
+## ![20190107](../images/20190107.png)
+
+
+
+
 
 ## 2 tcpdump 就是证据
 
   tcpdump - dump traffic on a network
 
 ```
-tcpdump -i eth0 '(tcp port 80)' -v  -w dump.pcap （服务器nginx 模拟一次请求）
+tcpdump -i eth0 '(tcp port 9821)' -v  -w dump.pcap （服务器nginx 模拟一次请求）
 sz dump.pcap
 
 ```
@@ -142,6 +146,20 @@ Next sequence number:=Sequence number+len(data)  保证数据顺序传输，并�
 
 ------------------------------------------【未完待续  这是最基本的使用】------------------------------------------------------
 
+
+
+补充 2019-01-17
+
+
+
+# TCP Retransmission
+
+http://www.saminiir.com/lets-code-tcp-ip-stack-5-tcp-retransmission/
+
+http://www.orczhou.com/index.php/2011/10/tcpip-protocol-start-rto/
+
+
+
 ## 4 扩展阅读
 
 #### strace - trace system calls and signals
@@ -167,9 +185,9 @@ strace -o output.txt -T -tt -e trace=all -p 6107(nginx)
 -e strace=signal
 跟踪所有与系统信号有关的 系统调用]  
 [ <0.000041> -T 显示每一调用所耗的时间. ]
-![write成功了](C:\Users\wangchuanyi\AppData\Roaming\Typora\typora-user-images\1546914140549.png)
+
 ```
 
-
+![write成功了](C:\Users\wangchuanyi\AppData\Roaming\Typora\typora-user-images\1546914140549.png)
 
 #### Fiddler
